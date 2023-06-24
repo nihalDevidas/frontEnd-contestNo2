@@ -1,0 +1,142 @@
+*{
+ font-family: 'Poppins';
+}
+body,html{
+    height:100vh;
+}
+body{
+    padding: 80px 0px 0px 0px;
+    background-color: #f5f5f5;
+}
+
+
+.container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*border:1px solid;*/
+    height:60px;
+    font-size: 18px;
+    padding:0px 25px 0px 35px;
+    background-color: black;
+
+    position:fixed;
+    left:0px;
+    right:0px;
+    top:0px;
+}
+
+.heading, a, .s1{
+    color:rgb(225, 251, 249);
+}
+
+.sec1{
+    display:flex;
+    justify-content: space-between;
+
+    /*border: 1px solid;*/
+    width:380px;
+}
+.nav-anchor{
+    text-decoration: none;
+}
+
+.s1{
+    transition: opacity 0.16s;
+}
+
+.s1:hover{
+    opacity:0.8;
+    cursor: pointer;
+}
+
+
+
+
+/* css for table section */
+.section1-container{
+    margin-left:150px;
+    margin-bottom:30px;
+
+    width:fit-content;
+    background-color: white;
+    padding:20px 15px 15px 15px;
+   
+    box-shadow: 0px 0px 15px 1.5px rgba(190, 189, 189, 0.5);
+    
+}
+.table-anchor{
+    color:blue;
+    
+}
+td{
+    font-family:'Courier New', Courier, monospace;
+    font-weight:500;
+}
+
+.outer-td{
+    padding: 10px 0px 15px 20px;
+}
+.inner-td{
+    padding: 8px 0px 8px 20px;
+}
+
+.book-table{
+    width:70vw;
+    height:220px;
+    border-color: #f5bfbf;
+    
+}
+.inner-table{
+    width:90%;
+    margin-top: 15px;
+    border-color: #f5bfbf;
+}
+
+/* form css */
+.section2-container{
+    margin-left:150px;
+    width:fit-content;
+    background-color: white;
+    padding:30px 15px 30px 15px;
+   
+    box-shadow: 0px 0px 15px 1.5px rgba(190, 189, 189, 0.5);
+}
+.section2-container > h1{
+  font-weight: bolder;
+}
+div > input, div > button{
+    width:69.5vw;
+}
+.btn1{
+    width:70vw;
+    padding:5px 5px 5px 5px;
+    margin-top:10px;
+    background-color: black;
+    color:#f5f5f5;
+    transition: opacity 0.15s;
+}
+
+.btn1:hover{
+    opacity:0.9;
+    cursor: pointer;
+}
+.btn1:active{
+    opacity:0.5;
+}
+input{
+    height:30px;
+    border:none;
+    border-radius: 5px;
+    background-color: rgb(237, 233, 233);
+    transition: opacity 0.15s;
+}
+input:hover{
+    opacity:0.7;
+    cursor: pointer;
+}
+
+.form-content{
+    padding:0px 0px 12px 0px;
+}

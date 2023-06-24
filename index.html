@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="../FrontEndContest2/index.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <title>Library System</title>
+    
+</head>
+<body>
+<header>
+   <div class="container">
+    <div class = "heading">Library System</div>
+    <div class="sec1">
+        <a class = "nav-anchor" href="#book-section"><div class="s1">Books</div></a>
+        <a class = "nav-anchor" href="#register-section"><div class="s1">Register</div></a>
+        <div class="s1">Contact Us</div>
+        <div class="s1">Logout</div>
+    </div>
+   </div>
+</header>
+<main>
+    <section>
+        <div class = 'section1-container' id="book-section">
+            <h1>Books</h1>
+            <table border="2" class = "book-table">
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genere</th>
+                <th>Avaibilty</th>
+
+                <tr>
+                    <td class="outer-td">1</td>
+                    <td class="outer-td">
+                        <a class = "table-anchor" href="https://en.wikipedia.org/wiki/World_Book_Encyclopedia"> Encyclopedia</a>
+                        <table class="inner-table" border="2">
+                        <tr><td class="inner-td">Publication date: 1917</td></tr>
+                        <tr><td class="inner-td">page count: 290</td></tr>
+                        <tr><td class="inner-td">ISBN: 0202987</td></tr>
+                        </table>
+                    </td>
+                    <td class="outer-td">not Available</td>
+                    <td class="outer-td">encyclopedia</td>
+                    <td class="outer-td">available*</td>
+                </tr>
+                
+                <tr>
+                    <td class="outer-td">2</td>
+                    <td class="outer-td">
+                        <a class = "table-anchor" href="https://en.wikipedia.org/wiki/World_Book_Encyclopedia"> Modern Physics</a>
+                        <table class="inner-table" border="2">
+                        <tr><td class="inner-td">Publication date: 1997</td></tr>
+                        <tr><td class="inner-td">page count: 999</td></tr>
+                        <tr><td class="inner-td">ISBN: 9202987</td></tr>
+                        </table>
+                    </td>
+                    <td class="outer-td">JP Nadda</td>
+                    <td class="outer-td">physics</td>
+                    <td class="outer-td"><b>Not-available</b></td>
+                </tr>
+                <tr>
+                    <td class="outer-td">3</td>
+                    <td class="outer-td">
+                        <a class = "table-anchor" href="https://en.wikipedia.org/wiki/World_Book_Encyclopedia"> Engineering drawing</a>
+                        <table class="inner-table" border="2">
+                        <tr><td class="inner-td">Publication date: 1907</td></tr>
+                        <tr><td class="inner-td">page count: 969</td></tr>
+                        <tr><td class="inner-td">ISBN: 9202956-89</td></tr>
+                        </table>
+                    </td>
+                    <td class="outer-td">JS Bhatt</td>
+                    <td class="outer-td">drawing</td>
+                    <td class="outer-td">available*</td>
+                </tr>
+
+                <tr>
+                    <td class="outer-td">4</td>
+                    <td class="outer-td">
+                        <a class = "table-anchor" href="https://en.wikipedia.org/wiki/World_Book_Encyclopedia"> Deep Dive in C++</a>
+                        <table class="inner-table" border="2">
+                        <tr><td class="inner-td">Publication date: 1208</td></tr>
+                        <tr><td class="inner-td">page count: 2342</td></tr>
+                        <tr><td class="inner-td">ISBN: 9202987</td></tr>
+                        </table>
+                    </td>
+                    <td class="outer-td">Scott Mayes</td>
+                    <td class="outer-td">programing</td>
+                    <td class="outer-td">available*</td>
+                </tr>
+
+                <tr>
+                    <td class="outer-td">5</td>
+                    <td class="outer-td">
+                        <a class = "table-anchor" href="https://en.wikipedia.org/wiki/World_Book_Encyclopedia"> Economy and population</a>
+                        <table class="inner-table" border="2">
+                        <tr><td class="inner-td">Publication date: 1907</td></tr>
+                        <tr><td class="inner-td">page count: 999</td></tr>
+                        <tr><td class="inner-td">ISBN: 92078987</td></tr>
+                        </table>
+                    </td>
+                    <td class="outer-td">Kp sitaraman</td>
+                    <td class="outer-td">economics</td>
+                    <td class="outer-td">available*</td>
+                </tr>
+            </table>
+            
+        </div>
+    </section>
+    <section>
+        <form class="section2-container" id="register-section" onsubmit="form_processing()">
+            <h1>Register</h1>
+
+            <div class="form-content1">
+                <label for="f_name">First Name:</label>
+            </div>
+            <div class="form-content">
+                <input type="text" required id="f_name" name="f_name">
+            </div>
+
+            <div class="form-content1">
+                <label for="l-name">Last Name:</label>
+            </div>
+            <div class="form-content">
+                <input type="text" required id="l_name" name="l_name">
+            </div>
+
+            <div class="form-content1">
+                <label for="dob">Date Of Birth:</label>
+            </div>
+            <div class="form-content">
+                <input type="date" required id="dob" name="dob">
+            </div>
+
+            <div class="form-content1">
+                <label for="age">Age:</label>
+            </div>
+            <div class="form-content">
+                <input type="number" min="5" max="100"  required id="age" name="age">
+            </div>
+
+            <div class="form-content1">
+                <label for="mail">Email:</label>
+            </div>
+            <div class="form-content">
+                <input type="email" required id="mail" name="mail">
+            </div>
+
+            <div class="form-content1"> 
+                <label for="passWord">Password:</label>
+            </div>
+            <div class="form-content">
+                <input type="password" required id="passWord" name="passWord">
+            </div>
+
+            <div class="form-content1">
+                <label for="c-passWord">Confirm Password:</label>
+            </div>
+            <div class="form-content">
+                <input type="password" required id="c-passWord" name="c-passWord">
+            </div>
+            <div class="form-content">
+                <button class="btn1" type="submit">Register</button>
+            </div>
+        </form>
+    </section>
+</main>
+<script src="../FrontEndContest2/index.js"></script>
+</body>
+</html>
